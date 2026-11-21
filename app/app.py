@@ -109,9 +109,9 @@ with tab_pred:
                 current = str(base[col]) if pd.notna(base[col]) else ""
                 if kind == "choice":
                     opts = sorted(set(df[col].dropna().astype(str)) - {""})
-                    values[col] = box.selectbox(label, opts, index=opts.index(current) if current in opts else 0, key=col)
+                    values[col] = box.selectbox(label, opts, index=opts.index(current) if current in opts else 0, key=f"{col}_{idx}")
                 else:
-                    values[col] = box.text_input(label, current, key=col)
+                    values[col] = box.text_input(label, current, key=f"{col}_{idx}")
             go = st.form_submit_button("Predict", type="primary", width="stretch")
 
     with right:

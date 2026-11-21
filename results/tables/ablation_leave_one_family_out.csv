@@ -1,0 +1,7 @@
+configuration,inputs,ROC-AUC,PR-AUC,Brier,Δ ROC-AUC vs full,Δ PR-AUC vs full,full model better (of 15 folds)
+Fused: genomic + clinical + interactions (final),51,0.765 ± 0.039,0.455 ± 0.057,0.1173,+0.000,+0.000,—
+without Clinical phenotype (9 inputs),42,0.751 ± 0.041,0.439 ± 0.062,0.1195,-0.014,-0.015,15
+without Genotype x clinical (3 inputs),48,0.765 ± 0.039,0.458 ± 0.056,0.1171,+0.000,+0.003,7
+without Variant class (9 inputs),42,0.766 ± 0.038,0.452 ± 0.056,0.1175,+0.001,-0.002,7
+without Position / protein structure (14 inputs),37,0.737 ± 0.040,0.404 ± 0.062,0.1223,-0.028,-0.051,15
+without Nucleotide / residue chemistry (16 inputs),35,0.769 ± 0.034,0.453 ± 0.058,0.1176,+0.004,-0.002,6

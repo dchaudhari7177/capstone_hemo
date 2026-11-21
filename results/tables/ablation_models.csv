@@ -1,0 +1,7 @@
+configuration,inputs,ROC-AUC,PR-AUC,Brier,Δ ROC-AUC vs full,Δ PR-AUC vs full,full model better (of 15 folds)
+Ensemble of 4 (final),51,0.765 ± 0.039,0.455 ± 0.057,0.1173,+0.000,+0.000,—
+LightGBM,51,0.765 ± 0.039,0.453 ± 0.054,0.1177,+0.000,-0.002,8
+XGBoost,51,0.763 ± 0.041,0.455 ± 0.057,0.1175,-0.001,+0.001,9
+CatBoost,51,0.761 ± 0.034,0.446 ± 0.057,0.1189,-0.004,-0.009,10
+Random forest,51,0.752 ± 0.036,0.437 ± 0.054,0.1200,-0.013,-0.018,14
+Logistic regression,51,0.745 ± 0.036,0.438 ± 0.059,0.1201,-0.020,-0.016,15

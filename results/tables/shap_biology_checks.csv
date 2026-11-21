@@ -1,0 +1,6 @@
+literature expectation,measured as,model (held-out SHAP),agrees
+Null variants raise risk (Gouw 2012),"mean variant-class SHAP, null vs other",+0.039 vs -0.012,True
+Large deletions highest of all effects,rank of large_deletion among effects by mean SHAP,1 of 6,True
+Severe > moderate > mild,mean SHAP of 'severity',mild -0.007 / moderate -0.006 / severe +0.007,True
+Lower FVIII activity raises risk,"Spearman(activity, its SHAP)",-0.85,True
+Missense in A2/C1/C2 riskier than elsewhere (Eckhardt 2013),"mean domain SHAP of missense, A2/C1/C2 vs other",+0.0009 vs -0.0018,True

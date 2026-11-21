@@ -1,0 +1,15 @@
+{
+  "threshold": 0.25819993499470284,
+  "oof_ROC-AUC": 0.7623689023046754,
+  "oof_PR-AUC": 0.4449892071093247,
+  "oof_PR-AUC baseline (prevalence)": 0.16848045143087464,
+  "oof_Brier": 0.11814676610296981,
+  "oof_MCC": 0.3558402570082345,
+  "oof_Balanced accuracy": 0.6936810446996176,
+  "oof_F1": 0.4736562001064396,
+  "oof_Sensitivity": 0.5322966507177034,
+  "oof_Specificity": 0.8550654386815317,
+  "oof_Precision": 0.42665388302972196,
+  "oof_Accuracy": 0.8006852075775897,
+  "oof_Majority-class accuracy": 0.8315195485691254
+}

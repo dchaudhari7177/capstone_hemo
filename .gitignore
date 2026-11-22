@@ -1,0 +1,14 @@
+# Review documents (report, presentation, study guide, briefing, review files) – kept locally, not published
+reports/
+tools/report_builder/templates/
+*.pptx
+*.docx
+*.pdf
+~$*
+
+# Python / notebook / tool caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+catboost_info/

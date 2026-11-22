@@ -6,6 +6,10 @@ Sneha A (PES1UG23CS582), Varsha V P (PES1UG23CS670)
 
 ## For Review 3 — open these first
 
+> The review documents in `reports/` (report, presentation, study guide, briefing) are kept on the team's machines
+> and are **not published in this repository** (see `.gitignore`). Everything needed to reproduce the results —
+> data, notebooks, code, tests, app and saved model — is here.
+
 | File | What it is |
 |---|---|
 | `reports/PW26_DN_03_Team_Study_Guide.pdf` | **Start here (teammates):** 18-page plain-language guide — notebooks, how it works, every app page, how to run |

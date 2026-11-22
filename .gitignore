@@ -1,6 +1,6 @@
-# Review documents (report, presentation, study guide, briefing, review files) – kept locally, not published
+# Local documents and document tooling (not part of the code)
 reports/
-tools/report_builder/templates/
+tools/
 *.pptx
 *.docx
 *.pdf

@@ -1,0 +1,74 @@
+column,role,family,meaning
+report_id,identifier (not a model input),,MMC3 patient report id (all_id)
+mut_id,identifier (not a model input),,MMC2 variant id
+variant_key,identifier (not a model input),,variant group: reports of the same biological variant; never split between train and test
+publication,identifier (not a model input),,source publication of the report
+raw_mut_syn,original source field (not a model input),,HGVS cDNA name of the variant
+raw_aa_syn,original source field (not a model input),,protein change
+raw_mut_effect,original source field (not a model input),,variant effect as published
+raw_mut_type,original source field (not a model input),,variant type as published
+raw_d_id,original source field (not a model input),,protein domain as published
+raw_location,original source field (not a model input),,location (exon/intron/...)
+raw_e_i_numb,original source field (not a model input),,exon/intron number as published
+raw_aa_numb,original source field (not a model input),,amino-acid position
+raw_nuc_numb,original source field (not a model input),,cDNA position
+raw_ntchange,original source field (not a model input),,nucleotide change
+raw_aa_first,original source field (not a model input),,reference amino acid
+raw_aa_last,original source field (not a model input),,new amino acid
+raw_n_bp,original source field (not a model input),,length of the variant (bp)
+raw_cli_phe,original source field (not a model input),,clinical severity as published
+raw_clotting,original source field (not a model input),,FVIII activity (%) as published
+raw_antigen,original source field (not a model input),,FVIII antigen (%) as published
+raw_type,original source field (not a model input),,CRM type as published
+cdna_position,model input (numeric),Position / protein structure,position in the cDNA
+aa_position,model input (numeric),Position / protein structure,amino-acid position
+exon_intron_number,model input (numeric),Position / protein structure,exon number
+log_n_bp,model input (numeric),Variant class,log10 length of the variant (bp)
+hydropathy_change,model input (numeric),Nucleotide / residue chemistry,change in hydropathy of the residue
+charge_change,model input (numeric),Nucleotide / residue chemistry,change in charge of the residue
+cys_gained,model input (numeric),Nucleotide / residue chemistry,a cysteine is introduced
+cys_lost,model input (numeric),Nucleotide / residue chemistry,a cysteine is lost
+arg_lost,model input (numeric),Nucleotide / residue chemistry,an arginine is lost
+ref_codon_has_cpg,model input (numeric),Nucleotide / residue chemistry,reference codon contains a CpG site
+is_transition,model input (numeric),Nucleotide / residue chemistry,"single-base transition (A<->G, C<->T)"
+log_fviii_activity,model input (numeric),Clinical phenotype,log10 residual FVIII activity (%) of this patient
+log_fviii_antigen,model input (numeric),Clinical phenotype,log10 FVIII antigen level
+is_null_variant,model input (numeric),Variant class,"no FVIII protein made (large del, nonsense, frameshift)"
+is_large_deletion,model input (numeric),Variant class,variant is a large deletion
+cpg_signature,model input (numeric),Nucleotide / residue chemistry,C>T or G>A change (CpG hotspot signature)
+relative_pos,model input (numeric),Position / protein structure,position along the mature protein (0-1)
+is_light_chain,model input (numeric),Position / protein structure,position lies in the FVIII light chain
+epitope_distance,model input (numeric),Position / protein structure,residues to the nearest known inhibitor epitope
+functional_site_distance,model input (numeric),Position / protein structure,residues to the nearest functional site
+truncation_fraction,model input (numeric),Variant class,share of the protein lost by a truncating variant
+nmd_escape,model input (numeric),Variant class,truncating variant in the last exon (escapes NMD)
+is_exon14_B_domain,model input (numeric),Position / protein structure,variant in exon 14 (B domain)
+grantham,model input (numeric),Nucleotide / residue chemistry,Grantham distance of the substitution
+blosum62,model input (numeric),Nucleotide / residue chemistry,BLOSUM62 substitution score
+delta_volume,model input (numeric),Nucleotide / residue chemistry,change in residue volume
+delta_polarity,model input (numeric),Nucleotide / residue chemistry,change in residue polarity
+aromatic_change,model input (numeric),Nucleotide / residue chemistry,aromatic residue gained or lost
+pro_gly_involved,model input (numeric),Nucleotide / residue chemistry,proline or glycine involved in the change
+severity_ordinal,model input (numeric),Clinical phenotype,severity as 0 / 1 / 2
+fviii_below_1,model input (numeric),Clinical phenotype,FVIII activity < 1 %
+fviii_measured,model input (numeric),Clinical phenotype,FVIII activity was reported
+null_x_severe,model input (numeric),Genotype x clinical,null variant in a severe patient
+missense_x_C_domain,model input (numeric),Position / protein structure,missense variant in the C1/C2 domain
+missense_x_A2,model input (numeric),Position / protein structure,missense variant in the A2 domain
+missense_x_mild,model input (numeric),Genotype x clinical,missense variant in a mild patient
+log_epitope_distance,model input (numeric),Position / protein structure,log of the same
+in_epitope,model input (numeric),Position / protein structure,position lies inside an inhibitor epitope
+mut_type,model input (categorical),Variant class,"variant type (point, deletion, ...)"
+effect,model input (categorical),Variant class,"variant effect (missense, nonsense, ...)"
+domain,model input (categorical),Position / protein structure,FVIII protein domain (A1 ... C2)
+location,model input (categorical),Variant class,"where the variant lies (exon, intron, ...)"
+nt_change,model input (categorical),Nucleotide / residue chemistry,"nucleotide change (C>T, ...)"
+aa_ref,model input (categorical),Nucleotide / residue chemistry,reference amino acid
+severity,model input (categorical),Clinical phenotype,clinical severity (mild / moderate / severe)
+crm_type,model input (categorical),Clinical phenotype,cross-reacting material type (I / II / unknown)
+fviii_activity_kind,model input (categorical),Clinical phenotype,"how FVIII activity was reported (exact, <x, range, missing)"
+fviii_antigen_kind,model input (categorical),Clinical phenotype,how FVIII antigen was reported
+aa_alt_class,model input (categorical),Variant class,"kind of new residue (amino acid, stop, frameshift, missing)"
+effect_x_severity,model input (categorical),Genotype x clinical,variant effect combined with severity
+effect_x_domain,model input (categorical),Position / protein structure,variant effect combined with domain
+inhibitor,target,,"1 = inhibitor reported, 0 = no inhibitor"

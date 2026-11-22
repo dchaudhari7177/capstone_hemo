@@ -9,7 +9,7 @@ Sneha A (PES1UG23CS582), Varsha V P (PES1UG23CS670)
 | File | What it is |
 |---|---|
 | `reports/PW26_DN_03_Team_Study_Guide.pdf` | **Start here (teammates):** 18-page plain-language guide — notebooks, how it works, every app page, how to run |
-| `reports/PW26_DN_03_Capstone_Phase3_Report.pdf` | Project report, 60 pages, PES format (print this one) |
+| `reports/PW26_DN_03_Capstone_Phase3_Report.pdf` | Project report, 59 pages, PES format (print this one) |
 | `reports/PW26_DN_03_Capstone_Phase3_Report.docx` | Same report, editable in Word |
 | `reports/PW26_DN_03_Review3_Presentation.pptx` | Review-3 deck on the department template, 24 slides, speaker notes on every slide |
 | `reports/Review3_Team_Briefing.md` | What every team member should know: project, numbers, slide script, demo, viva Q&A |
@@ -63,7 +63,11 @@ src/
   diagrams.py   architecture, record flow, evaluation protocol, class, sequence and use-case diagrams
 app/app.py      Streamlit application
 tests/          31 pytest tests (parsing, leakage rules, model, SHAP, LIME, saved model)
-data/raw/       the two EAHAD supplementary CSVs
+data/raw/       the two EAHAD supplementary CSVs (the original published data)
+data/processed/ final_modelling_dataset.csv / .xlsx — the exact table the model is trained on (4,962 rows:
+                identifiers + raw fields + 51 model inputs + target), plus its column dictionary, and
+                final_modelling_dataset_encoded.csv / .xlsx — the same rows as the model sees them (13 categorical
+                inputs one-hot encoded into 147 0/1 columns + 38 numeric inputs = 188 columns) (written by notebook 03)
 models/         final_inhibitor_ensemble.joblib (model + threshold 0.258 + SHAP background)
 results/        figures (PNG) and tables (CSV/JSON) used by the report and slides
 reports/        Review-3 report and deck, team briefing, earlier review documents

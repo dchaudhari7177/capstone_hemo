@@ -8,45 +8,45 @@ truncation_fraction,0.010442746044631301,Variant class,share of the protein lost
 grantham,0.009457553985960359,Nucleotide / residue chemistry,Grantham distance of the substitution
 epitope_distance,0.008798250171326395,Position / protein structure,residues to the nearest known inhibitor epitope
 severity,0.007721276555051754,Clinical phenotype,clinical severity (mild / moderate / severe)
-effect_x_domain,0.0076881807091476635,Position / protein structure,
+effect_x_domain,0.0076881807091476635,Position / protein structure,variant effect combined with domain
 functional_site_distance,0.007672132849959504,Position / protein structure,residues to the nearest functional site
-aa_ref,0.006577451935791642,Nucleotide / residue chemistry,
+aa_ref,0.006577451935791642,Nucleotide / residue chemistry,reference amino acid
 mut_type,0.006573008852647517,Variant class,"variant type (point, deletion, ...)"
 aa_position,0.0064920330304423105,Position / protein structure,amino-acid position
 log_epitope_distance,0.0064396165914752035,Position / protein structure,log of the same
 fviii_measured,0.0061323878144982835,Clinical phenotype,FVIII activity was reported
-fviii_activity_kind,0.005248646674753553,Clinical phenotype,
+fviii_activity_kind,0.005248646674753553,Clinical phenotype,"how FVIII activity was reported (exact, <x, range, missing)"
 domain,0.005051389636061103,Position / protein structure,FVIII protein domain (A1 ... C2)
-delta_volume,0.0050348648315017746,Nucleotide / residue chemistry,
+delta_volume,0.0050348648315017746,Nucleotide / residue chemistry,change in residue volume
 relative_pos,0.004706795736495164,Position / protein structure,position along the mature protein (0-1)
-delta_polarity,0.004299554621014986,Nucleotide / residue chemistry,
+delta_polarity,0.004299554621014986,Nucleotide / residue chemistry,change in residue polarity
 blosum62,0.004092632107506014,Nucleotide / residue chemistry,BLOSUM62 substitution score
-pro_gly_involved,0.0036049856092322924,Nucleotide / residue chemistry,
-aa_alt_class,0.003424077504654203,Variant class,
+pro_gly_involved,0.0036049856092322924,Nucleotide / residue chemistry,proline or glycine involved in the change
+aa_alt_class,0.003424077504654203,Variant class,"kind of new residue (amino acid, stop, frameshift, missing)"
 nt_change,0.0032017408321867104,Nucleotide / residue chemistry,"nucleotide change (C>T, ...)"
-hydropathy_change,0.002983838067516473,Nucleotide / residue chemistry,
-arg_lost,0.0027787748181905604,Nucleotide / residue chemistry,
+hydropathy_change,0.002983838067516473,Nucleotide / residue chemistry,change in hydropathy of the residue
+arg_lost,0.0027787748181905604,Nucleotide / residue chemistry,an arginine is lost
 effect,0.0024173970862473144,Variant class,"variant effect (missense, nonsense, ...)"
 is_null_variant,0.002256179448987516,Variant class,"no FVIII protein made (large del, nonsense, frameshift)"
-cys_gained,0.0019884126478982734,Nucleotide / residue chemistry,
-is_light_chain,0.0017957211575108756,Position / protein structure,
+cys_gained,0.0019884126478982734,Nucleotide / residue chemistry,a cysteine is introduced
+is_light_chain,0.0017957211575108756,Position / protein structure,position lies in the FVIII light chain
 effect_x_severity,0.0016341442483107642,Genotype x clinical,variant effect combined with severity
 log_fviii_antigen,0.0016079316358441915,Clinical phenotype,log10 FVIII antigen level
-cys_lost,0.001420509127915224,Nucleotide / residue chemistry,
-fviii_antigen_kind,0.00135082308889946,Clinical phenotype,
-ref_codon_has_cpg,0.0013272710273129998,Nucleotide / residue chemistry,
-is_transition,0.0012690071266170644,Nucleotide / residue chemistry,
-charge_change,0.0011901382759981632,Nucleotide / residue chemistry,
-aromatic_change,0.0011134195766359265,Nucleotide / residue chemistry,
+cys_lost,0.001420509127915224,Nucleotide / residue chemistry,a cysteine is lost
+fviii_antigen_kind,0.00135082308889946,Clinical phenotype,how FVIII antigen was reported
+ref_codon_has_cpg,0.0013272710273129998,Nucleotide / residue chemistry,reference codon contains a CpG site
+is_transition,0.0012690071266170644,Nucleotide / residue chemistry,"single-base transition (A<->G, C<->T)"
+charge_change,0.0011901382759981632,Nucleotide / residue chemistry,change in charge of the residue
+aromatic_change,0.0011134195766359265,Nucleotide / residue chemistry,aromatic residue gained or lost
 log_n_bp,0.0009738261188647655,Variant class,log10 length of the variant (bp)
-missense_x_C_domain,0.0007697048994304135,Position / protein structure,
+missense_x_C_domain,0.0007697048994304135,Position / protein structure,missense variant in the C1/C2 domain
 fviii_below_1,0.0006508232408677166,Clinical phenotype,FVIII activity < 1 %
-location,0.0006478390292921072,Variant class,
-missense_x_A2,0.000463705621177924,Position / protein structure,
+location,0.0006478390292921072,Variant class,"where the variant lies (exon, intron, ...)"
+missense_x_A2,0.000463705621177924,Position / protein structure,missense variant in the A2 domain
 missense_x_mild,0.00042185092912788523,Genotype x clinical,missense variant in a mild patient
-is_exon14_B_domain,0.0004209816064709017,Position / protein structure,
-crm_type,0.0004030558568712246,Clinical phenotype,cross-reacting material type
-cpg_signature,0.00037670764062350796,Nucleotide / residue chemistry,
-in_epitope,0.0003697328475163263,Position / protein structure,
-is_large_deletion,0.0002566457498944318,Variant class,
-nmd_escape,0.00021800365939530223,Variant class,
+is_exon14_B_domain,0.0004209816064709017,Position / protein structure,variant in exon 14 (B domain)
+crm_type,0.0004030558568712246,Clinical phenotype,cross-reacting material type (I / II / unknown)
+cpg_signature,0.00037670764062350796,Nucleotide / residue chemistry,C>T or G>A change (CpG hotspot signature)
+in_epitope,0.0003697328475163263,Position / protein structure,position lies inside an inhibitor epitope
+is_large_deletion,0.0002566457498944318,Variant class,variant is a large deletion
+nmd_escape,0.00021800365939530223,Variant class,truncating variant in the last exon (escapes NMD)
